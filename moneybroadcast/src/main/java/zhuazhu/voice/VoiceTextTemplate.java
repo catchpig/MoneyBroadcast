@@ -26,6 +26,7 @@ public class VoiceTextTemplate {
      */
     public static List<String> genVoiceList(VoiceBuilder voiceBean) {
         List<String> result = new ArrayList<>();
+        result.add("start");
         String start = voiceBean.getStart();
         String money = voiceBean.getMoney();
         String unit = voiceBean.getUnit();

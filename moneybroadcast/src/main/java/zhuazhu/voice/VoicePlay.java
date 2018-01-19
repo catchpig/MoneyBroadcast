@@ -51,6 +51,12 @@ public class VoicePlay {
     }
 
     /**
+     * 退款成功
+     */
+    public void playRefundSuccess(){
+        executeStart("refund_success");
+    }
+    /**
      * 收款失败
      */
     public void playDefeated(){

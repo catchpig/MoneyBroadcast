@@ -11,8 +11,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        VoicePlay.with(this).play("56.23");
-        VoicePlay.with(this).playSuccess();
-        VoicePlay.with(this).playSuccess();
+        VoicePlay voicePlay = VoicePlay.with(this);
+        voicePlay.play("56.23");
+        voicePlay.playSuccess();
+        voicePlay.playClose();
+        voicePlay.playDefeated();
+        voicePlay.playRefundSuccess();
     }
 }
