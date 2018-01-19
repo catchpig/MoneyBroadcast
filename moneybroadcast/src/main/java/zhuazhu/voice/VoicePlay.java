@@ -51,6 +51,19 @@ public class VoicePlay {
     }
 
     /**
+     * 关闭语音播报
+     */
+    public void playClose(){
+        mExecutorService.execute(new Runnable() {
+            @Override
+            public void run() {
+                List<String> voicePlay = new ArrayList<>();
+                voicePlay.add("close");
+                start(voicePlay);
+            }
+        });
+    }
+    /**
      * 播报收款成功
      */
     public void playSuccess(){
@@ -64,7 +77,7 @@ public class VoicePlay {
         });
     }
     /**
-     * 默认收款成功样式
+     * 播报金额
      *
      * @param money
      */
