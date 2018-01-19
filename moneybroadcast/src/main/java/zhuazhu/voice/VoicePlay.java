@@ -51,27 +51,29 @@ public class VoicePlay {
     }
 
     /**
+     * 收款失败
+     */
+    public void playDefeated(){
+        executeStart("defeated");
+    }
+    /**
      * 关闭语音播报
      */
     public void playClose(){
-        mExecutorService.execute(new Runnable() {
-            @Override
-            public void run() {
-                List<String> voicePlay = new ArrayList<>();
-                voicePlay.add("close");
-                start(voicePlay);
-            }
-        });
+        executeStart("close");
     }
     /**
      * 播报收款成功
      */
     public void playSuccess(){
+        executeStart("suc");
+    }
+    private void executeStart(final String voice){
         mExecutorService.execute(new Runnable() {
             @Override
             public void run() {
                 List<String> voicePlay = new ArrayList<>();
-                voicePlay.add("suc");
+                voicePlay.add(voice);
                 start(voicePlay);
             }
         });
