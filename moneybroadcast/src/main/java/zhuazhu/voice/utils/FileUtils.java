@@ -7,11 +7,11 @@ import android.content.res.AssetManager;
 import java.io.IOException;
 
 /**
- * @author 志尧
- * @date on 2018-01-12 13:51
- * @email 1417337180@qq.com
- * @describe 文件相关的工具类
- * @ideas
+ * 创建时间: 2017/12/26 16:47<br/>
+ * 创建人: 李涛<br/>
+ * 修改人: 李涛<br/>
+ * 修改时间: 2017/12/26 16:47<br/>
+ * 描述: 文件处理
  */
 public class FileUtils {
 

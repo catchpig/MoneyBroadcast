@@ -1,11 +1,11 @@
 package zhuazhu.voice.utils;
 
 /**
- * @author 志尧
- * @date on 2018-01-12 13:54
- * @email 1417337180@qq.com
- * @describe 关于金钱的工具类
- * @ideas
+ * 创建时间: 2017/12/26 16:47<br/>
+ * 创建人: 李涛<br/>
+ * 修改人: 李涛<br/>
+ * 修改时间: 2017/12/26 16:47<br/>
+ * 描述: 关于金钱的工具类
  */
 public class MoneyUtils {
 

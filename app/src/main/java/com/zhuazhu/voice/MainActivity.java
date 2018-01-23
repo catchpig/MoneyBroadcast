@@ -13,9 +13,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         VoicePlay voicePlay = VoicePlay.with(this);
         voicePlay.play("56.23");
-        voicePlay.playSuccess();
-        voicePlay.playClose();
-        voicePlay.playDefeated();
-        voicePlay.playRefundSuccess();
+//        voicePlay.playSuccess();
+//        voicePlay.playClose();
+//        voicePlay.playDefeated();
+//        voicePlay.playRefundSuccess();
     }
 }

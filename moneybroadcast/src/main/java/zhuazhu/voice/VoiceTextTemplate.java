@@ -9,11 +9,11 @@ import zhuazhu.voice.constant.VoiceConstants;
 import zhuazhu.voice.utils.MoneyUtils;
 
 /**
- * @author 志尧
- * @date on 2018-01-12 15:25
- * @email 1417337180@qq.com
- * @describe 音频组合
- * @ideas
+ * 创建时间: 2017/12/26 16:47<br/>
+ * 创建人: 李涛<br/>
+ * 修改人: 李涛<br/>
+ * 修改时间: 2017/12/26 16:47<br/>
+ * 描述: 语音组合
  */
 
 public class VoiceTextTemplate {

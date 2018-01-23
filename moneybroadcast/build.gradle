@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
 
 android {
     compileSdkVersion 26
@@ -22,6 +23,19 @@ android {
         }
     }
 
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "http://192.166.1.67:8081/repository/mejust-android-releases/") {
+                authentication(userName: "admin", password: "admin123")
+            }
+            pom.version = "1.0.0"
+            pom.artifactId = "mejust.moneybroadcast"
+            pom.groupId = "zhuazhu"
+        }
+    }
 }
 
 dependencies {

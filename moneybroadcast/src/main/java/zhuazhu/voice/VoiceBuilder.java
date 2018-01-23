@@ -1,11 +1,11 @@
 package zhuazhu.voice;
 
 /**
- * @author 志尧
- * @date on 2018-01-12 15:12
- * @email 1417337180@qq.com
- * @describe 组合音频 实体类
- * @ideas 开头 + 金额 + 单位
+ * 创建时间: 2017/12/26 16:47<br/>
+ * 创建人: 李涛<br/>
+ * 修改人: 李涛<br/>
+ * 修改时间: 2017/12/26 16:47<br/>
+ * 描述: 组合音频 实体类(开头 + 金额 + 单位)
  */
 
 public class VoiceBuilder {
