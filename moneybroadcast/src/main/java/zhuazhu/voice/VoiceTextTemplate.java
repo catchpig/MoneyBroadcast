@@ -26,8 +26,7 @@ public class VoiceTextTemplate {
      */
     public static List<String> genVoiceList(VoiceBuilder voiceBean) {
         List<String> result = new ArrayList<>();
-        result.add("start");
-        String start = voiceBean.getStart();
+        String[] start = voiceBean.getStart();
         String money = voiceBean.getMoney();
         String unit = voiceBean.getUnit();
 
@@ -35,12 +34,16 @@ public class VoiceTextTemplate {
             return result;
         }
 
-        if (!TextUtils.isEmpty(start)) {
-            result.add(start);
+        if (start != null) {
+            for (String s : start) {
+                if (!TextUtils.isEmpty(s)) {
+                    result.add(s);
+                }
+            }
         }
 
         if (!TextUtils.isEmpty(money)) {
-                result.addAll(genReadableMoney(money));
+            result.addAll(genReadableMoney(money));
         }
 
         if (!TextUtils.isEmpty(unit)) {

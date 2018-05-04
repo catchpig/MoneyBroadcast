@@ -85,20 +85,30 @@ public class VoicePlay {
         });
     }
     /**
-     * 播报金额
+     * 播报收到+金额
      *
      * @param money
      */
     public void play(String money) {
         VoiceBuilder voiceBuilder = new VoiceBuilder.Builder()
-                .start(VoiceConstants.SUCCESS)
+                .start(VoiceConstants.GOLD,VoiceConstants.SUCCESS)
                 .money(money)
                 .unit(VoiceConstants.YUAN)
                 .builder();
         executeStart(voiceBuilder);
     }
 
-
+    /**
+     * 播报金额
+     * @param money
+     */
+    public void playMoney(String money){
+        VoiceBuilder voiceBuilder = new VoiceBuilder.Builder()
+                .money(money)
+                .unit(VoiceConstants.YUAN)
+                .builder();
+        executeStart(voiceBuilder);
+    }
 
     /**
      * 接收自定义

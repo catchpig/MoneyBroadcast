@@ -11,13 +11,13 @@ package zhuazhu.voice;
 public class VoiceBuilder {
 
     //开头音频
-    private String start;
+    private String[] start;
     //播报金额
     private String money;
     //单位
     private String unit;
 
-    public String getStart() {
+    public String[] getStart() {
         return start;
     }
 
@@ -31,11 +31,11 @@ public class VoiceBuilder {
 
 
     public static class Builder {
-        private String start;
+        private String[] start;
         private String money;
         private String unit;
 
-        public Builder start(String start) {
+        public Builder start(String... start) {
             this.start = start;
             return this;
         }

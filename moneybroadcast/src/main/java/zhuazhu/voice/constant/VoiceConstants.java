@@ -26,6 +26,8 @@ public class VoiceConstants {
     public static final String TEN_MILLION = "ten_million";
     //店老板收到
     public static final String SUCCESS = "success";
+    //金币响铃
+    public static final String GOLD = "gold";
     //元
     public static final String YUAN = "yuan";
 }
